@@ -8,7 +8,6 @@ layout: page
     {% for _ in site.data.presentations %}
       {% assign presentation = _.presentation %}
       <li>
-        <a> IT WORKS </a>
         <em class="title">{{ presentation.title }}</em> at <em class="event">{{ presentation.event }}</em> <em class="date">({{ presentation.date }})</em>
         <p class="comment">{{ presentation.comment | markdownify }}</p>
         <div class="links">

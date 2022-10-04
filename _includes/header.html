@@ -126,6 +126,21 @@
           </a>
         {% endif %}
         {% endcase %}
+        <a id="icons" href="https://twitter.com/chrjabs" target="_blank" title="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.google.com">
+          <li class="btn-nav">Google</li>
+        </a>
+       
+
+        {% if current[0] == 'test' %}
+          <li class="current">test</li>
+        {% else %}
+          <a href="{{ '/test' | relative_url }}">
+            <li class="btn-nav">test</li>
+          </a>
+        {% endif %}
       </ul>
     </nav>
   </header>
